@@ -1,0 +1,46 @@
+.header {
+    padding: 1rem 2.5rem 2rem 2.5rem;
+    border-bottom: 4px outset #0a3bb4;
+    background-color: #061C51;
+}
+
+.logo {
+    grid-area: logo;
+    margin-top: -.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    float: left;
+}
+
+.logo h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+    margin-bottom: -1.5rem;
+    color: #678FF1;
+    text-shadow: 3px 3px #0A3BB4;
+}
+
+.logo h4 {
+    font-family: 'Merriweather', serif;
+    color: #678FF1;
+    font-size: 1rem;
+}
+
+a {
+    color: #678FF1;
+    padding-right: 2rem;
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: transparent;
+    padding: .45rem;
+    display: inline-flex;
+}
+
+.headernav {
+    text-align: right;
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+}

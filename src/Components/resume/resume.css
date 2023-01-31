@@ -1,0 +1,83 @@
+.resume {
+    grid-area: resume;
+}
+
+.resumelist {
+    display: grid;
+    grid-template-areas: "certs experience";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 4rem;
+}
+
+
+
+.resume h4 {
+    text-align: center;
+    padding: 0 3rem;
+    text-shadow: 1px 1px #678ff1;
+    line-height: 2;
+    margin-top: 3rem;
+}
+
+.arrow {
+    font-size: 7rem;
+    line-height: 0.5;
+}
+
+.certs ul {
+    margin-left: 8rem;
+}
+
+.certs li {
+    list-style-type: circle;
+    font-family: 'Merriweather Sans', sans-serif;
+    line-height: 1.5;
+}
+
+.certs a {
+    color: #0A3BB4;
+    text-decoration: underline;
+}
+
+.certs a:hover {
+    color: #2A60E7B3;
+    text-decoration: none;
+}
+
+.experience {
+    background-color: #2A60E7B3;
+    padding: 2rem;
+    border-radius: 5px;
+    max-width: 82%;
+    height: 92%;
+    margin: 0 auto;
+}
+
+.experience h5 {
+    background-color: #2A60E7;
+    padding: .5rem;
+    width: 100%;
+    color: #C3D4FC;
+    border-radius: 5px;
+}
+
+.experience a {
+    color: #C3D4FC;
+    text-decoration: underline;
+}
+
+.experience a:hover {
+    color: #678FF1;
+    text-decoration: none;
+}
+
+.experience h6 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.0rem;
+    margin-bottom: -0.25rem;
+}
+
+.experience li {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 300;
+}
