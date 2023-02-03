@@ -1,8 +1,8 @@
 .resume {
-    grid-area: resume;
+    height: 20rem;
 }
 
-.resumelist {
+/*.resumelist {
     display: grid;
     grid-template-areas: "certs experience";
     grid-template-columns: 1fr 2fr;
@@ -80,4 +80,4 @@
 .experience li {
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 300;
-}
+} */
