@@ -1,0 +1,8 @@
+how to do a mouse enter/mouse leave
+
+<p className="merchManager">
+    onMouseEnter= {()=>setManager(true)}    
+    onMouseLeave= {()=>setManager(false)}>
+    Merchandising Operations Manager • April 2022 to Present</p> 
+    
+        {manager && <Manager /> }
