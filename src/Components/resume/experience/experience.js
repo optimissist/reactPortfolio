@@ -3,6 +3,7 @@ import Manager from './manager.js';
 import Senior from './senior.js';
 import Specialist from './specialist.js';
 import Coordinator from './coordinator.js';
+import './experience.css';
 
 
 export default function Experience() {
@@ -11,9 +12,6 @@ export default function Experience() {
     const [specialist, setSpecialist] = useState(false);
     const [coordinator, setCoordinator] = useState(false);
     
-
-
-
     return (
     <div className="experience">
         <p className="companyName"><a href="https://www.teambeachbody.com/" target="_blank" id="tbb">Beachbody</a> — 2018 to present</p>
