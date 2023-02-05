@@ -12,6 +12,7 @@ export default function PortfolioItem2() {
                 hideDownload={true}
             />;
             <p className="projectCopy">I was asked to build a standalone page to outline the 645 Commitment reward program when the 645 program launched. This page was custom designed and built from provided proof. I built the page using Endeca, WCS and Atom with HTML and CSS.</p>
+            <p className="projectGitLink"><a href="https://github.com/optimissist/TBB-Portfolio/tree/main/645%20Commitment" target="_blank" rel="noreferrer">View on GitHub.</a></p>
         </div>
     )
 }
