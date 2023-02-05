@@ -14,7 +14,7 @@ export default function Experience() {
     
     return (
     <div className="experience">
-        <p className="companyName"><a href="https://www.teambeachbody.com/" target="_blank" id="tbb">Beachbody</a> — 2018 to present</p>
+        <p className="companyName"><a href="https://www.teambeachbody.com/" target="_blank" rel="noreferrer" id="tbb">Beachbody</a> — 2018 to present</p>
 
             <p className="merchManager" onClick={() => setManager(!manager)}>Merchandising Operations Manager • April 2022 to Present</p>
             {manager ? <Manager /> : " "}
