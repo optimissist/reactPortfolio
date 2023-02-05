@@ -9,7 +9,6 @@ export default function Skills() {
 
     return (
         <div className="skills">
-        <p className="skillsTitle">Skills</p>
         <ul className="skillsList">{skillsList}</ul>
         </div>
     )

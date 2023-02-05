@@ -87,7 +87,7 @@ export default function PortfolioContainer() {
             <button class="portfolioButton" onClick={handleClick2}>645 Commitment</button>
             <button class="portfolioButton" onClick={handleClick3}>Shakeology Recipe Tiles</button>
             <button class="portfolioButton" onClick={handleClick4}>Preferred Customer Pop Up</button>
-            <button class="portfolioButton" onClick={handleClick5}>Ravenous</button>
+            <button class="portfolioButton" onClick={handleClick5}>Ravenous React App</button>
             <button class="portfolioButton" onClick={handleClick6}>Jamming - Spotify Client</button>
             {item1 ? <PortfolioItem1 /> : ""}
             {item2 ? <PortfolioItem2 /> : ""}

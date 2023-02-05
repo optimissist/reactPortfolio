@@ -17,11 +17,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root {
+/* #root {
   display: grid;
-  /* grid-template-rows: 1fr 2fr .5fr; */
+  grid-template-rows: 1fr 2fr .5fr;
   grid-gap: var(--spacing-5);
-}
+} */
 
 a {
   color: var(--color-text-link);
