@@ -83,12 +83,14 @@ export default function PortfolioContainer() {
 
     return (
         <div className="portfolioContainer">
+            <div className="portfolioButtonContainer">
             <button class="portfolioButton" onClick={handleClick1}>Beachbody Shop Page</button>
             <button class="portfolioButton" onClick={handleClick2}>645 Commitment</button>
             <button class="portfolioButton" onClick={handleClick3}>Shakeology Recipe Tiles</button>
             <button class="portfolioButton" onClick={handleClick4}>Preferred Customer Pop Up</button>
-            <button class="portfolioButton" onClick={handleClick5}>Ravenous React App</button>
+            <button class="portfolioButton" onClick={handleClick5}>Ravenous Yelp App</button>
             <button class="portfolioButton" onClick={handleClick6}>Jamming - Spotify Client</button>
+            </div>
             {item1 ? <PortfolioItem1 /> : ""}
             {item2 ? <PortfolioItem2 /> : ""}
             {item3 ? <PortfolioItem3 /> : ""}

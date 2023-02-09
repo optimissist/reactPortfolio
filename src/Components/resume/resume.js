@@ -20,6 +20,7 @@ export default function Resume() {
                 {skills ? <Skills /> : ""}
             <p className="educationTitle" onClick={() => setEducation(!education)}><GoChevronDown className={`downChevron ${education && 'upChevron'}`} />Education</p>
             {education ? <Education /> : ""}
+            <p className="myResume"><a href="./images/SchevkerResume.pdf" target="_blank">My Resume </a></p>
         </div>
     )
     }

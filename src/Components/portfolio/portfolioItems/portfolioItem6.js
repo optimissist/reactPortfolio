@@ -5,14 +5,14 @@ export default function PortfolioItem6() {
     return (
         <div className="portfolio">
             <ModalImage
-                small={"images/PCPopout-mini.jpg"}
-                large={"images/PCPopout.png"}
-                alt="Preferred Customer Pop Out"
+                small={"images/jamming-mini.png"}
+                large={"images/jamming.png"}
+                alt="Jamming - Spotify Client"
                 className="portfolioImage"
                 hideDownload={true}
             />
-            <p className="projectCopy">The launch of the Preferred Customer program brought about the need for a new template. I created this pop out so it could be easily parsed and reused by developers with minimal coding knowledge. I made this popout using BCC, WCS and Atom.</p>
-            <p className="projectGitLink"> <a href="https://github.com/optimissist/jamming" target="_blank" rel="noreferrer">View on GitHub.</a></p>
+            <p className="projectCopy">I worked on this project during the React, Part II section of the Codecademy Front-End Engineering course. This project was built with JSX, CSS, JavaScript and React and uses the Spotify API.</p>
+            <p className="projectGitLink"> <a href="https://github.com/optimissist/jamming" target="_blank" rel="noreferrer">View on GitHub  |  </a><a href="https://jammingmss.surge.sh/" target="_blank" rel="noreferrer">View Project</a></p>
         </div>
     )
 }

@@ -16,7 +16,7 @@
 }
 
 .educationTitle, .skillsTitle {
-    padding-top: .5rem;
+    padding-top: 1.2rem;
 }
 
 .resumeDiv {
@@ -27,7 +27,29 @@ svg.upChevron {
     rotate: 180deg;
 }
 
-svg.downChevron {
-    display: flex;
-    justify-content: flex-end;
+.companyName {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.merchManager, .seniorSpecialist, .operationsSpecialist, .coordinator {
+    padding: 1rem;
+    /* border-bottom: 2px black dotted; */
+}
+
+svg.upArrow {
+    rotate: 180deg;
+}
+
+.educationItem {
+    line-height: 2rem;
+}
+
+.myResume {
+    text-align: right;
+    padding-top: 2rem;
+}
+
+.myResume a {
+    color: #000;
 }

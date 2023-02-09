@@ -5,14 +5,14 @@ export default function PortfolioItem5() {
     return (
         <div className="portfolio">
             <ModalImage
-                small={"images/PCPopout-mini.jpg"}
-                large={"images/PCPopout.png"}
-                alt="Preferred Customer Pop Out"
+                small={"images/ravenous-mini.png"}
+                large={"images/ravenous.png"}
+                alt="Ravenous Yelp Project"
                 className="portfolioImage"
                 hideDownload={true}
             />
-            <p className="projectCopy">The launch of the Preferred Customer program brought about the need for a new template. I created this pop out so it could be easily parsed and reused by developers with minimal coding knowledge. I made this popout using BCC, WCS and Atom.</p>
-            <p className="projectGitLink"> <a href="https://github.com/optimissist/RavenousProject" target="_blank" rel="noreferrer">View on GitHub.</a></p>
+            <p className="projectCopy">This project was created for the Create a front-end app with React course with Codecademy. It was built with JSX, CSS, JavaScript and React and uses the Yelp API. </p>
+            <p className="projectGitLink"> <a href="https://github.com/optimissist/RavenousProject" target="_blank" rel="noreferrer">View on GitHub  |  </a><a href="https://ravenousms.surge.sh/" target="_blank" rel="noreferrer">View Project</a></p>
         </div>
     )
 }

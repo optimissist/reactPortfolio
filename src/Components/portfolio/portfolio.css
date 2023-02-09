@@ -1,0 +1,46 @@
+.portfolioContainer {
+    min-height: 20rem;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolioButtonContainer {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolioButton {
+    margin: 0.5rem;
+}
+
+.portfolioImage {
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.projectCopy, .projectGitLink {
+    line-height: 1.5;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.projectGitLink {
+    padding-bottom: 1rem;
+    padding-top: 0.4rem;
+}
+
+.projectGitLink a {
+    text-decoration: none;
+ }
+
+.projectCopy {
+    padding-top: 1rem
+}

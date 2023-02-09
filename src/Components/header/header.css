@@ -2,7 +2,8 @@
     padding: 1rem 2.5rem 2rem 2.5rem;
     border-bottom: 4px outset #0a3bb4;
     background-color: #061C51;
-    height: 15%;
+    height: 5rem;
+    width: 100%
 }
 
 .logo {
@@ -36,6 +37,7 @@
     background-color: transparent;
     padding: .45rem;
     display: inline-flex;
+    font-size: 1.2rem;
 }
 
 .headernav {
@@ -44,4 +46,30 @@
     float: right;
     display: flex;
     align-items: center;
+    padding-right: 3rem;
+}
+
+@media all and (max-width: 840px) {
+    .header {
+            height: 8rem;
+        }
+    
+    .headernav {
+        float: none;
+        padding-right: 0;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+    
+    .headernav a {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .logo {
+         float: none;
+        align-items: center;
+        margin-top: -2.75rem;
+        }
 }
