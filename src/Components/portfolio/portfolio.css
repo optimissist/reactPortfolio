@@ -16,6 +16,11 @@
 
 .portfolioButton {
     margin: 0.5rem;
+    text-align: center;
+}
+
+.portfolioButtonContainer ul {
+    display: flex;
 }
 
 .portfolioImage {
@@ -43,4 +48,8 @@
 
 .projectCopy {
     padding-top: 1rem
+}
+
+.active {
+    font-weight: bold;
 }

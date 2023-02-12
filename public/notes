@@ -6,3 +6,147 @@ how to do a mouse enter/mouse leave
     Merchandising Operations Manager • April 2022 to Present</p> 
     
         {manager && <Manager /> }
+
+/////////////////////////////////////////////////////////////////////////
+
+import React, { useState, useEffect } from 'react';
+import PortfolioItem1 from './portfolioItems/portfolioItem1.js';
+import PortfolioItem2 from './portfolioItems/portfolioItem2.js';
+import PortfolioItem3 from './portfolioItems/portfolioItem3.js';
+import PortfolioItem4 from './portfolioItems/portfolioItem4.js';
+import PortfolioItem5 from './portfolioItems/portfolioItem5.js';
+import PortfolioItem6 from './portfolioItems/portfolioItem6.js';
+import './portfolio.css';
+
+export default function PortfolioContainer() {
+    const [active, setActive] = useState(false);
+
+
+    const portfolioItems = [
+        { id: "5", component: <PortfolioItem5 />, title: "Ravenous Yelp App" },
+        { id: "6", component: <PortfolioItem6 />, title: "Jamming - Spotify Client" },
+        { id: "1", component: <PortfolioItem1 />, title: "Beachbody Shop Page" },
+        { id: "2", component: <PortfolioItem2 />, title: "645 Commitment" },
+        { id: "3", component: <PortfolioItem3 />, title: "Shakeology Recipe Tiles" },
+        { id: "4", component: <PortfolioItem4 />, title: "Preferred Customer Pop Up" }
+    ];
+
+    useEffect(() => {
+        if (active) {
+            document.getElementById("portfolioButton").classList.add("active");
+        } else {
+            document.getElementById("portfolioButton").classList.remove("active");
+        }
+    }, [active]);
+
+    const [component, setComponent] = useState(portfolioItems[0].component);
+
+    const toggleClass = (item) => {
+        console.log(item);
+        // for (let item = 0; item < portfolioItems.length; item++){
+        setActive(!active)
+        // }
+    }
+
+
+    return (
+        <div className="portfolioContainer">
+            <div className="portfolioButtonContainer">
+                <ul>
+                    {
+                        portfolioItems.map((item, i) => {
+                            return (
+                                <li key={i} onClick={() => { setComponent(item.component); toggleClass(item) }} className={`portfolioButton ${setActive ? "" : "active"}`} id="portfolioButton">
+                                    {item.title}
+                                </li>
+                            )
+                        }
+                        )
+                    }
+                </ul>
+            </div>
+            <div>
+                {component}
+            </div>
+        </div>
+    )
+}
+        
+        // <li className={`portfolioButton ${isActive5 ? "active" : "" }`} 
+        
+        onClick={()=> { handleClick5(); ToggleClass();
+            }}>Ravenous Yelp App</li>
+        
+        return (
+        <div className="portfolioContainer">
+            <div className="portfolioButtonContainer">
+                <li className={`portfolioButton ${isActive1 ? "active" : "" }`} onClick={handleClick1}>Beachbody Shop Page</li>
+        
+                <li className={`portfolioButton ${isActive2 ? "active" : "" }`} onClick={handleClick2}>645 Commitment</li>
+        
+                <li className={`portfolioButton ${isActive3 ? "active" : "" }`} onClick={handleClick3}>Shakeology Recipe Tiles
+                </li>
+        
+                <li className={`portfolioButton ${isActive4 ? "active" : "" }`} onClick={handleClick4}>Preferred Customer Pop Up
+                </li>
+        
+                <li className={`portfolioButton ${isActive5 ? "active" : "" }`} onClick={handleClick5}>Ravenous Yelp App</li>
+        
+                <li className={`portfolioButton ${isActive5 ? "active" : "" }`} onClick={handleClick6}>Jamming - Spotify Client
+                </li>
+            </div>
+            {item1 ?
+            <PortfolioItem1 /> : ""}
+            {item2 ?
+            <PortfolioItem2 /> : ""}
+            {item3 ?
+            <PortfolioItem3 /> : ""}
+            {item4 ?
+            <PortfolioItem4 /> : ""}
+            {item5 ?
+            <PortfolioItem5 /> : ""}
+            {item6 ?
+            <PortfolioItem6 /> : ""}
+        </div>
+        )
+        }
+
+
+
+
+
+import React, { useState, useEffect } from 'react';
+import PortfolioItem1 from './portfolioItems/portfolioItem1.js';
+import PortfolioItem2 from './portfolioItems/portfolioItem2.js';
+import PortfolioItem3 from './portfolioItems/portfolioItem3.js';
+import PortfolioItem4 from './portfolioItems/portfolioItem4.js';
+import PortfolioItem5 from './portfolioItems/portfolioItem5.js';
+import PortfolioItem6 from './portfolioItems/portfolioItem6.js';
+import './portfolio.css';
+
+export default function PortfolioContainer() {
+    const [active, isActive] = useState("");
+    const [item, setItem] = useState(false);
+    
+
+    return (
+        <div className="portfolioContainer">
+            <div className="portfolioButtonContainer">
+                {/* <ul>
+                <li className={`portfolioButton`} onClick={handleClick5}>Ravenous Yelp App</li>
+                <li className={`portfolioButton`} onClick={handleClick6}>Jamming - Spotify Client</li>
+                <li className={`portfolioButton`} onClick={handleClick1}>Beachbody Shop Page</li>
+                <li className={`portfolioButton`} onClick={handleClick2}>645 Commitment</li>
+                <li className={`portfolioButton`} onClick={handleClick3}>Shakeology Recipe Tiles</li>
+                <li className={`portfolioButton`} onClick={handleClick4}>Preferred Customer Pop Up</li>
+                </ul> */}
+            </div>
+            {item1 ? <PortfolioItem1 /> : ""}
+            {item2 ? <PortfolioItem2 /> : ""}
+            {item3 ? <PortfolioItem3 /> : ""}
+            {item4 ? <PortfolioItem4 /> : ""}
+            {item5 ? <PortfolioItem5 /> : ""}
+            {item6 ? <PortfolioItem6 /> : ""}
+        </div>
+    )
+}
