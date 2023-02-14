@@ -95,58 +95,6 @@ export default function PortfolioContainer() {
                 <li className={`portfolioButton ${isActive5 ? "active" : "" }`} onClick={handleClick6}>Jamming - Spotify Client
                 </li>
             </div>
-            {item1 ?
-            <PortfolioItem1 /> : ""}
-            {item2 ?
-            <PortfolioItem2 /> : ""}
-            {item3 ?
-            <PortfolioItem3 /> : ""}
-            {item4 ?
-            <PortfolioItem4 /> : ""}
-            {item5 ?
-            <PortfolioItem5 /> : ""}
-            {item6 ?
-            <PortfolioItem6 /> : ""}
         </div>
         )
         }
-
-
-
-
-
-import React, { useState, useEffect } from 'react';
-import PortfolioItem1 from './portfolioItems/portfolioItem1.js';
-import PortfolioItem2 from './portfolioItems/portfolioItem2.js';
-import PortfolioItem3 from './portfolioItems/portfolioItem3.js';
-import PortfolioItem4 from './portfolioItems/portfolioItem4.js';
-import PortfolioItem5 from './portfolioItems/portfolioItem5.js';
-import PortfolioItem6 from './portfolioItems/portfolioItem6.js';
-import './portfolio.css';
-
-export default function PortfolioContainer() {
-    const [active, isActive] = useState("");
-    const [item, setItem] = useState(false);
-    
-
-    return (
-        <div className="portfolioContainer">
-            <div className="portfolioButtonContainer">
-                {/* <ul>
-                <li className={`portfolioButton`} onClick={handleClick5}>Ravenous Yelp App</li>
-                <li className={`portfolioButton`} onClick={handleClick6}>Jamming - Spotify Client</li>
-                <li className={`portfolioButton`} onClick={handleClick1}>Beachbody Shop Page</li>
-                <li className={`portfolioButton`} onClick={handleClick2}>645 Commitment</li>
-                <li className={`portfolioButton`} onClick={handleClick3}>Shakeology Recipe Tiles</li>
-                <li className={`portfolioButton`} onClick={handleClick4}>Preferred Customer Pop Up</li>
-                </ul> */}
-            </div>
-            {item1 ? <PortfolioItem1 /> : ""}
-            {item2 ? <PortfolioItem2 /> : ""}
-            {item3 ? <PortfolioItem3 /> : ""}
-            {item4 ? <PortfolioItem4 /> : ""}
-            {item5 ? <PortfolioItem5 /> : ""}
-            {item6 ? <PortfolioItem6 /> : ""}
-        </div>
-    )
-}
