@@ -2,13 +2,13 @@
     padding: 1rem 2.5rem 2rem 2.5rem;
     border-bottom: 4px outset #0a3bb4;
     background-color: #061C51;
-    height: 5rem;
+    height: 7.5rem;
     width: 100%
 }
 
 .logo {
     grid-area: logo;
-    margin-top: -2.25rem;
+    margin-top: -1.25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

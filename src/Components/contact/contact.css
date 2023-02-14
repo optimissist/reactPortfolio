@@ -1,0 +1,20 @@
+.contactTitle {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    /* border-bottom: 1px black dashed; */
+}
+
+.contactForm {
+    text-align: center;
+    /* margin: 3rem auto;
+    max-width: 50rem !important; */
+}
+
+Form {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 50rem;
+    margin: 2rem auto;
+}
