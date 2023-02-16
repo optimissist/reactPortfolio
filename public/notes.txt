@@ -1,3 +1,37 @@
+Scissors Cut Paper
+    Scissors Win
+    Paper Lose
+Paper Covers Rock
+    Paper Win
+    Rock Lose
+Rock Crushes Lizard
+    Rock Win
+    Lizard Lose
+Lizard Poisons Spock
+    Lizard Win
+    Spock Lose
+Spock Smashes Scissors
+    Spock Win 
+    Scissors Lose 
+Scissors Decapitate Lizard
+    Scissors Win
+    Lizard Lose 
+Lizard Eats Paper
+    Lizard Win 
+    Paper Lose 
+Paper Disproves Spock
+    Paper Win 
+    Spock Lose 
+Spock vaporizes Rock
+    Spock Win
+    Rock Lose    
+and... as always
+Rock crushes scissors
+    Rock Win
+    Scissors Lose
+
+
+
 how to do a mouse enter/mouse leave
 
 <p className="merchManager">
