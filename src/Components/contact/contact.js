@@ -1,7 +1,5 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-// import { Button, Label, Form, Input, TextArea } from 'semantic-ui-react';
-// import Formsy from 'formsy-react'
 import { Form, Input, TextArea } from 'formsy-semantic-ui-react';
 import { Button, Label } from 'semantic-ui-react';
 import Swal from 'sweetalert2';
@@ -36,12 +34,6 @@ export default function Contact(){
       });
     document.getElementById("contactForm").reset();
   };
-
-
-
-//   function handleClick() {
-
-//   }
 
     return (
         <div>
