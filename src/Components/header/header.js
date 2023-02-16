@@ -11,7 +11,7 @@ export default function Header() {
                 <h4>Front-end Web Developer</h4>
             </div>
             <div className="headernav">
-            <NavLink to="/">About</NavLink>
+            <NavLink to="/">Home</NavLink>
             <NavLink to="/portfolio">Portfolio</NavLink>
             <NavLink to="/resume">Resume</NavLink>
             <NavLink to="/contact">Contact Me</NavLink>
