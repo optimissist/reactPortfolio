@@ -1,25 +1,52 @@
-import React from 'react';
-// import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+import GamePlay from './game/gamePlay/gamePlay.js';
+import StarWars from './StarWars/starwars.js';
 import './about.css';
 
-export default function About() {
-    let myLinkedIn = <Link to={{ pathname: "https://www.linkedin.com/in/marlaschevker" }} target="_blank">LinkedIn</Link>
-    let myGitHub = <Link to={{ pathname: "https://github.com/optimissist/" }} target="_blank">GitHub</Link>
-    let bioContactMe = <Link to={"/contact"}>contact me</Link>
+export default function Home() {
+    const [active, setActive] = useState(false);
+    const homeItems = [
+        { id: "1", component: <GamePlay />, title: "Rock, Paper, Scissors, Lizard, Spock" }, 
+        { id: "2", component: <StarWars />, title: "Search the Star Wars Universe" },
+    ]
 
+    const homeIds = homeItems.map((item) => item.id);
+    console.log(homeIds);
 
+    useEffect(() => {
+        if (active) {
+            document.getElementById("homeButton").classList.add("active");
+        } else {
+            document.getElementById("homeButton").classList.remove("active");
+        }
+    }, [active]);
+
+    const [component, setComponent] = useState();
+
+    // const toggleClass = (item) => {
+    //     setActive(!active)
+    // }
 
     return (
-        <div className="about">
-            <h2 id="about">About the developer</h2>
-            <div className="aboutme">
-                <div className="bio">
-                    <p>I thought I wanted to be a journalist but it turns out, I just like making pretty things with words. Since my first coding class 20 years ago, I have always tried to find ways to incorporate web development into my work. Now, it is my passion <em>and</em> my profession.</p>
-                    <p>I am always interested in new opportunities to use my experience and skills.</p>
-                    <p>So, if you are looking for a front-end web engineer or want to chat about front-end web development, {bioContactMe} or find me on {myGitHub} or {myLinkedIn}.</p>
-                </div>
-                </div>
-                </div>
+        <div className="homeContainer">
+            <div className="homeButtonContainer">
+                <ul className="homeButtonUL">
+                    {
+                        homeItems.map((item, i) => {
+                            return (
+                                <li key={i} onClick={() => { setComponent(item.component) }} className={`homeButton ${setActive ? "" : "active"}`} id="homeButton">
+                                    {item.title}
+                                </li>
+                            )
+                        }
+                        )
+                    }
+                </ul>
+            </div>
+            <div>
+                {component}
+            </div>
+        </div>
     )
+    
 }

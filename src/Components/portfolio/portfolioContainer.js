@@ -35,12 +35,12 @@ export default function PortfolioContainer() {
 
     const [component, setComponent] = useState(portfolioItems[0].component);
 
-    const toggleClass = (item) => {
-        // console.log(item);
-        // for (let item = 0; item < portfolioItems.length; item++){
-        setActive(!active)
-        // }
-    }
+    // const toggleClass = (item) => {
+    //     // console.log(item);
+    //     // for (let item = 0; item < portfolioItems.length; item++){
+    //     setActive(!active)
+    //     // }
+    // }
 
 
     return (
@@ -50,7 +50,7 @@ export default function PortfolioContainer() {
                     {
                         portfolioItems.map((item, i) => {
                             return (
-                                <li key={i} onClick={() => { setComponent(item.component); toggleClass(item) }} className={`portfolioButton ${setActive ? "" : "active"}`} id="portfolioButton">
+                                <li key={i} onClick={() => { setComponent(item.component) }} className={`portfolioButton ${setActive ? "" : "active"}`} id="portfolioButton">
                                     {item.title}
                                 </li>
                             )
