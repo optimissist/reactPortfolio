@@ -64,6 +64,7 @@
     .headernav a {
         justify-content: center;
         align-items: flex-start;
+        font-size: 1rem;
     }
 
     .logo {
