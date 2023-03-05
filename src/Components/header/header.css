@@ -22,6 +22,7 @@
     color: #678FF1;
 }
 
+
 .logo h4 {
     font-family: 'Merriweather', serif;
     color: #678FF1;
@@ -69,5 +70,10 @@
          float: none;
         align-items: center;
         margin-top: -2.75rem;
-        }
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+        margin-top: 2.5rem;
+    }
 }

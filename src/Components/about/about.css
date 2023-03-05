@@ -13,9 +13,9 @@
 }
 
 
-
 .homeButton {
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: underline;
+    line-height: 1.5;
 }

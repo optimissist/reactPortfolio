@@ -23,7 +23,7 @@ export default function GameResultsView(props) {
                     <button
                         className="gameButton"
                         type="button"
-                        data-testid="scissorsButton"
+                        data-testid="paperButton"
                         onClick={() => checkResult(choicesList[1].id)}
                     >
                         <img
